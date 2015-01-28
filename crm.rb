@@ -3,9 +3,13 @@ require_relative 'contact'
 require 'sinatra'
 
 $rolodex = Rolodex.new
-$rolodex.add_contact Contact.new("Yehuda", "Katz", "yehuda@example.com", "Developer")
-$rolodex.add_contact Contact.new("Mark", "Zuckerberg", "mark@facebook.com", "CEO")
-$rolodex.add_contact Contact.new("Sergey", "Brin", "sergey@google.com", "Co-Founder")
+
+$rolodex.add_contact(Contact.new("john", "smith", 'j@smith.com', 'like things'))
+$rolodex.add_contact(Contact.new("jane", "smith", 'j@smith.com', 'like things'))
+$rolodex.add_contact(Contact.new("josh", "smith", 'j@smith.com', 'like things'))
+$rolodex.add_contact(Contact.new("jim", "smith", 'j@smith.com', 'like things'))
+$rolodex.add_contact(Contact.new("jerry", "smith", 'j@smith.com', 'like things'))
+
 
 get '/' do 
 	@crm_app_name = "My CRM"
@@ -24,10 +28,7 @@ get '/contacts/new' do
 	erb :new
 end
 
-get '/contacts/new' do
-  erb :new_contact
-end
 
 post '/contacts' do
-  puts params
+	params[:note]
 end

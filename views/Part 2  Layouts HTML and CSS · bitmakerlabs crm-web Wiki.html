@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<!-- saved from url=(0075)https://github.com/bitmakerlabs/crm-web/wiki/Part-2%3A-Layouts-HTML-and-CSS -->
+<html lang="en" class=""><head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    
+    
+    <title>Part 2: Layouts HTML and CSS · bitmakerlabs/crm-web Wiki</title>
+    <link rel="search" type="application/opensearchdescription+xml" href="https://github.com/opensearch.xml" title="GitHub">
+    <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+    <link rel="apple-touch-icon" sizes="57x57" href="https://github.com/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="https://github.com/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="https://github.com/apple-touch-icon-144.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="https://github.com/apple-touch-icon-144.png">
+    <meta property="fb:app_id" content="1401488693436528">
+
+      <meta content="@github" name="twitter:site"><meta content="summary" name="twitter:card"><meta content="bitmakerlabs/crm-web" name="twitter:title"><meta content="crm-web - A small web application built with Sinatra" name="twitter:description"><meta content="https://avatars2.githubusercontent.com/u/2728609?v=3&amp;s=400" name="twitter:image:src">
+<meta content="GitHub" property="og:site_name"><meta content="object" property="og:type"><meta content="https://avatars2.githubusercontent.com/u/2728609?v=3&amp;s=400" property="og:image"><meta content="bitmakerlabs/crm-web" property="og:title"><meta content="https://github.com/bitmakerlabs/crm-web" property="og:url"><meta content="crm-web - A small web application built with Sinatra" property="og:description">
+
+      <meta name="browser-stats-url" content="/_stats">
+    <link rel="assets" href="https://assets-cdn.github.com/">
+    <link rel="conduit-xhr" href="https://ghconduit.com:25035/">
+    <link rel="xhr-socket" href="https://github.com/_sockets">
+    <meta name="pjax-timeout" content="1000">
+    <link rel="sudo-modal" href="https://github.com/sessions/sudo_modal">
+
+    <meta name="msapplication-TileImage" content="/windows-tile.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="selected-link" value="repo_wiki" data-pjax-transient="">
+      <meta name="google-analytics" content="UA-3769691-2">
+
+    <meta content="collector.githubapp.com" name="octolytics-host"><meta content="collector-cdn.github.com" name="octolytics-script-host"><meta content="github" name="octolytics-app-id"><meta content="63E76739:2BF1:D93BB9:54C92154" name="octolytics-dimension-request_id"><meta content="10507588" name="octolytics-actor-id"><meta content="dbgood" name="octolytics-actor-login"><meta content="bf81722987fd698f47458d0a74fb51cd81bb3bbf7548fd50bbb46c205b4ecd78" name="octolytics-actor-hash">
+    <meta content="/private/private/wiki/show" name="analytics-location">
+    <meta content="Rails, view, wiki#show" name="analytics-event">
+
+    
+    
+    <link rel="icon" type="image/x-icon" href="https://assets-cdn.github.com/favicon.ico">
+
+
+    <meta content="authenticity_token" name="csrf-param">
+<meta content="A8xAquGlDpv5dcdsneOBPRYaVq3AWJgb48PW1sYt3Uoac+iZL8lgMPvf2sDPMToAFj29wkwFfMMYGlTdoWTcag==" name="csrf-token">
+
+    <link href="./Part 2  Layouts HTML and CSS · bitmakerlabs crm-web Wiki_files/github-f19e43be00c28904df28a1fd1fa3c117e5d2358dd3cf0f4216536f8737c2e033.css" media="all" rel="stylesheet" type="text/css">
+    <link href="./Part 2  Layouts HTML and CSS · bitmakerlabs crm-web Wiki_files/github2-29c7da379589a0dc8a4aeee9d661ddbbc6726ded580d170ced239d72d1137908.css" media="all" rel="stylesheet" type="text/css">
+    
+    
+
+
+    <meta http-equiv="x-pjax-version" content="52aee216f294b9c9a6a8b25f193226a4">
+
+      
+  <meta name="description" content="crm-web - A small web application built with Sinatra">
+  <meta name="go-import" content="github.com/bitmakerlabs/crm-web git https://github.com/bitmakerlabs/crm-web.git">
+
+  <meta content="2728609" name="octolytics-dimension-user_id"><meta content="bitmakerlabs" name="octolytics-dimension-user_login"><meta content="18313260" name="octolytics-dimension-repository_id"><meta content="bitmakerlabs/crm-web" name="octolytics-dimension-repository_nwo"><meta content="false" name="octolytics-dimension-repository_public"><meta content="false" name="octolytics-dimension-repository_is_fork"><meta content="18313260" name="octolytics-dimension-repository_network_root_id"><meta content="bitmakerlabs/crm-web" name="octolytics-dimension-repository_network_root_nwo">
+  <link href="https://github.com/bitmakerlabs/crm-web/commits/master.atom?token=AKBVRIteX_T-zod6YMGLsjVhxk8tHMhAks6y1lPUwA%3D%3D" rel="alternate" title="Recent Commits to crm-web:master" type="application/atom+xml">
+
+  <script type="text/javascript" async="" src="./Part 2  Layouts HTML and CSS · bitmakerlabs crm-web Wiki_files/api.js"></script></head>
+
+
+  <body class="logged_in  env-production macintosh vis-private">
+    <a href="https://github.com/bitmakerlabs/crm-web/wiki/Part-2%3A-Layouts-HTML-and-CSS#start-of-content" tabindex="1" class="accessibility-aid js-skip-to-content">Skip to content</a>
+    <div class="wrapper">
+      
+      
+      
+      
+
+
+      <div class="header header-logged-in true" role="banner">
+  <div class="container clearfix">
+
+    <a class="header-logo-invertocat" href="https://github.com/" data-hotkey="g d" aria-label="Homepage" ga-data-click="Header, go to dashboard, icon:logo">
+  <span class="mega-octicon octicon-mark-github"></span>
+</a>
+
+
+      <div class="site-search repo-scope js-site-search" role="search">
+          <form accept-charset="UTF-8" action="https://github.com/bitmakerlabs/crm-web/search" class="js-site-search-form" data-global-search-url="/search" data-repo-search-url="/bitmakerlabs/crm-web/search" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"></div>
+  <input type="text" class="js-site-search-field is-clearable" data-hotkey="s" name="q" placeholder="Search" data-global-scope-placeholder="Search GitHub" data-repo-scope-placeholder="Search" tabindex="1" autocapitalize="off">
+  <div class="scope-badge">This repository</div>
+</form>
+      </div>
+      <ul class="header-nav left" role="navigation">
+        <li class="header-nav-item explore">
+          <a class="header-nav-link" href="https://github.com/explore" data-ga-click="Header, go to explore, text:explore">Explore</a>
+        </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="https://gist.github.com/" data-ga-click="Header, go to gist, text:gist">Gist</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="https://github.com/blog" data-ga-click="Header, go to blog, text:blog">Blog</a>
+          </li>
+        <li class="header-nav-item">
+          <a class="header-nav-link" href="https://help.github.com/" data-ga-click="Header, go to help, text:help">Help</a>
+        </li>
+      </ul>
+
+    
+<ul class="header-nav user-nav right" id="user-links">
+  <li class="header-nav-item dropdown js-menu-container">
+    <a class="header-nav-link name" href="https://github.com/dbgood" data-ga-click="Header, go to profile, text:username">
+      <img alt="dbgood" class="avatar" data-user="10507588" height="20" src="./Part 2  Layouts HTML and CSS · bitmakerlabs crm-web Wiki_files/10507588" width="20">
+      <span class="css-truncate">
+        <span class="css-truncate-target">dbgood</span>
+      </span>
+    </a>
+  </li>
+
+  <li class="header-nav-item dropdown js-menu-container">
+    <a class="header-nav-link js-menu-target tooltipped tooltipped-s" href="https://github.com/bitmakerlabs/crm-web/wiki/Part-2%3A-Layouts-HTML-and-CSS#" aria-label="Create new..." data-ga-click="Header, create new, icon:add">
+      <span class="octicon octicon-plus"></span>
+      <span class="dropdown-caret"></span>
+    </a>
+
+    <div class="dropdown-menu-content js-menu-content">
+      
+<ul class="dropdown-menu">
+  <li>
+    <a href="https://github.com/new" data-ga-click="Header, create new repository, icon:repo"><span class="octicon octicon-repo"></span> New repository</a>
+  </li>
+  <li>
+    <a href="https://github.com/organizations/new" data-ga-click="Header, create new organization, icon:organization"><span class="octicon octicon-organization"></span> New organization</a>
+  </li>
+
+
+    <li class="dropdown-divider"></li>
+    <li class="dropdown-header">
+      <span title="bitmakerlabs/crm-web">This repository</span>
+    </li>
+      <li>
+        <a href="https://github.com/bitmakerlabs/crm-web/issues/new" data-ga-click="Header, create new issue, icon:issue"><span class="octicon octicon-issue-opened"></span> New issue</a>
+      </li>
+</ul>
+
+    </div>
+  </li>
+
+  <li class="header-nav-item">
+        <a href="https://github.com/notifications" aria-label="You have no unread notifications" class="header-nav-link notification-indicator tooltipped tooltipped-s" data-ga-click="Header, go to notifications, icon:read" data-hotkey="g n">
+        <span class="mail-status all-read"></span>
+        <span class="octicon octicon-inbox"></span>
+</a>
+  </li>
+
+  <li class="header-nav-item">
+    <a class="header-nav-link tooltipped tooltipped-s" href="https://github.com/settings/profile" id="account_settings" aria-label="Settings" data-ga-click="Header, go to settings, icon:settings">
+      <span class="octicon octicon-gear"></span>
+    </a>
+  </li>
+
+  <li class="header-nav-item">
+    <form accept-charset="UTF-8" action="https://github.com/logout" class="logout-form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"><input name="authenticity_token" type="hidden" value="Gr4fBPHBOmS3xfgo5pMCDRtuL6mJhf6gwPn7ca5MI/2Rhr+cTy+BD+Gp9rGIPYTXlFEgHOMIi3MEhUWDiEh/Qg=="></div>
+      <button class="header-nav-link sign-out-button tooltipped tooltipped-s" aria-label="Sign out" data-ga-click="Header, sign out, icon:logout">
+        <span class="octicon octicon-sign-out"></span>
+      </button>
+</form>  </li>
+
+</ul>
+
+
+    
+  </div>
+</div>
+
+      
+
+        
+
+
+      <div id="start-of-content" class="accessibility-aid"></div>
+          <div class="site" itemscope="" itemtype="http://schema.org/WebPage">
+    <div id="js-flash-container">
+      
+    </div>
+    <div class="pagehead repohead instapaper_ignore readability-menu">
+      <div class="container">
+        
+<ul class="pagehead-actions">
+
+    <li class="subscription">
+      <form accept-charset="UTF-8" action="https://github.com/notifications/subscribe" class="js-social-container" data-autosubmit="true" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"><input name="authenticity_token" type="hidden" value="B+rlAxU4s9tf2BHQ/fQwLctE70y+C1kTzLnwtUU7VnZkEHh0q96NKKYh8ErJ03CaUKu6BghZcwWF2XEbtX7MPA=="></div>  <input id="repository_id" name="repository_id" type="hidden" value="18313260">
+
+    <div class="select-menu js-menu-container js-select-menu">
+      <a class="social-count js-social-count" href="https://github.com/bitmakerlabs/crm-web/watchers">
+        7
+      </a>
+      <a href="https://github.com/bitmakerlabs/crm-web/subscription" class="minibutton select-menu-button with-count js-menu-target" role="button" tabindex="0" aria-haspopup="true">
+        <span class="js-select-button">
+          <span class="octicon octicon-eye"></span>
+          Watch
+        </span>
+      </a>
+
+      <div class="select-menu-modal-holder">
+        <div class="select-menu-modal subscription-menu-modal js-menu-content" aria-hidden="true">
+          <div class="select-menu-header">
+            <span class="select-menu-title">Notifications</span>
+            <span class="octicon octicon-x js-menu-close" role="button" aria-label="Close"></span>
+          </div> <!-- /.select-menu-header -->
+
+          <div class="select-menu-list js-navigation-container" role="menu">
+
+            <div class="select-menu-item js-navigation-item selected" role="menuitem" tabindex="0">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <div class="select-menu-item-text">
+                <input checked="checked" id="do_included" name="do" type="radio" value="included">
+                <h4>Not watching</h4>
+                <span class="description">Be notified when participating or @mentioned.</span>
+                <span class="js-select-button-text hidden-select-button-text">
+                  <span class="octicon octicon-eye"></span>
+                  Watch
+                </span>
+              </div>
+            </div> <!-- /.select-menu-item -->
+
+            <div class="select-menu-item js-navigation-item " role="menuitem" tabindex="0">
+              <span class="select-menu-item-icon octicon octicon octicon-check"></span>
+              <div class="select-menu-item-text">
+                <input id="do_subscribed" name="do" type="radio" value="subscribed">
+                <h4>Watching</h4>
+                <span class="description">Be notified of all conversations.</span>
+                <span class="js-select-button-text hidden-select-button-text">
+                  <span class="octicon octicon-eye"></span>
+                  Unwatch
+                </span>
+              </div>
+            </div> <!-- /.select-menu-item -->
+
+            <div class="select-menu-item js-navigation-item " role="menuitem" tabindex="0">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <div class="select-menu-item-text">
+                <input id="do_ignore" name="do" type="radio" value="ignore">
+                <h4>Ignoring</h4>
+                <span class="description">Never be notified.</span>
+                <span class="js-select-button-text hidden-select-button-text">
+                  <span class="octicon octicon-mute"></span>
+                  Stop ignoring
+                </span>
+              </div>
+            </div> <!-- /.select-menu-item -->
+
+          </div> <!-- /.select-menu-list -->
+
+        </div> <!-- /.select-menu-modal -->
+      </div> <!-- /.select-menu-modal-holder -->
+    </div> <!-- /.select-menu -->
+
+</form>
+    </li>
+
+  <li>
+    
+  <div class="js-toggler-container js-social-container starring-container ">
+
+    <form accept-charset="UTF-8" action="https://github.com/bitmakerlabs/crm-web/unstar" class="js-toggler-form starred js-unstar-button" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"><input name="authenticity_token" type="hidden" value="OISCfhCuNZ2w4JoUwDw2Jqpt4v+5URIllIB2ClItRXhvlJ8LdjyLBmeasRQ0wL4OZGrVm4sCF2oLa+gEnfNV8w=="></div>
+      <button class="minibutton with-count js-toggler-target star-button" aria-label="Unstar this repository" title="Unstar bitmakerlabs/crm-web">
+        <span class="octicon octicon-star"></span>
+        Unstar
+      </button>
+        <a class="social-count js-social-count" href="https://github.com/bitmakerlabs/crm-web/stargazers">
+          0
+        </a>
+</form>
+    <form accept-charset="UTF-8" action="https://github.com/bitmakerlabs/crm-web/star" class="js-toggler-form unstarred js-star-button" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"><input name="authenticity_token" type="hidden" value="1ok4iCfKSMh/nNEk8nheHAvde2Xzyd3bfUslZWPq1604EqJAKEhYZ1KS0N//VQbEvjJ8YwMXr5MeIFSpRV3whw=="></div>
+      <button class="minibutton with-count js-toggler-target star-button" aria-label="Star this repository" title="Star bitmakerlabs/crm-web">
+        <span class="octicon octicon-star"></span>
+        Star
+      </button>
+        <a class="social-count js-social-count" href="https://github.com/bitmakerlabs/crm-web/stargazers">
+          0
+        </a>
+</form>  </div>
+
+  </li>
+
+
+        <li>
+          <a href="https://github.com/bitmakerlabs/crm-web/fork" class="minibutton with-count js-toggler-target fork-button tooltipped-n" title="Fork your own copy of bitmakerlabs/crm-web to your account" aria-label="Fork your own copy of bitmakerlabs/crm-web to your account" rel="facebox nofollow">
+            <span class="octicon octicon-repo-forked"></span>
+            Fork
+          </a>
+          <a href="https://github.com/bitmakerlabs/crm-web/network" class="social-count">5</a>
+        </li>
+
+</ul>
+
+        <h1 itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb" class="entry-title private">
+          <span class="mega-octicon octicon-lock"></span>
+          <span class="author"><a href="https://github.com/bitmakerlabs" class="url fn" itemprop="url" rel="author"><span itemprop="title">bitmakerlabs</span></a></span><!--
+       --><span class="path-divider">/</span><!--
+       --><strong><a href="https://github.com/bitmakerlabs/crm-web" class="js-current-repository" data-pjax="#js-repo-pjax-container">crm-web</a></strong>
+            <span class="repo-private-label">private</span>
+
+          <span class="page-context-loader">
+            <img alt="" height="16" src="./Part 2  Layouts HTML and CSS · bitmakerlabs crm-web Wiki_files/octocat-spinner-32.gif" width="16">
+          </span>
+
+        </h1>
+      </div><!-- /.container -->
+    </div><!-- /.repohead -->
+
+    <div class="container">
+      <div class="repository-with-sidebar repo-container new-discussion-timeline">
+        <div class="repository-sidebar clearfix">
+            
+<nav class="sunken-menu repo-nav js-repo-nav js-sidenav-container-pjax js-octicon-loaders" role="navigation" data-pjax="#js-repo-pjax-container" data-issue-count-url="/bitmakerlabs/crm-web/issues/counts">
+  <ul class="sunken-menu-group">
+    <li class="tooltipped tooltipped-w" aria-label="Code">
+      <a href="https://github.com/bitmakerlabs/crm-web" aria-label="Code" class="js-selected-navigation-item sunken-menu-item" data-hotkey="g c" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches /bitmakerlabs/crm-web">
+        <span class="octicon octicon-code"></span> <span class="full-word">Code</span>
+        <img alt="" class="mini-loader" height="16" src="./Part 2  Layouts HTML and CSS · bitmakerlabs crm-web Wiki_files/octocat-spinner-32.gif" width="16">
+</a>    </li>
+
+      <li class="tooltipped tooltipped-w" aria-label="Issues">
+        <a href="https://github.com/bitmakerlabs/crm-web/issues" aria-label="Issues" class="js-selected-navigation-item sunken-menu-item" data-hotkey="g i" data-selected-links="repo_issues repo_labels repo_milestones /bitmakerlabs/crm-web/issues">
+          <span class="octicon octicon-issue-opened"></span> <span class="full-word">Issues</span>
+          <span class="js-issue-replace-counter"></span>
+          <img alt="" class="mini-loader" height="16" src="./Part 2  Layouts HTML and CSS · bitmakerlabs crm-web Wiki_files/octocat-spinner-32.gif" width="16">
+</a>      </li>
+
+    <li class="tooltipped tooltipped-w" aria-label="Pull Requests">
+      <a href="https://github.com/bitmakerlabs/crm-web/pulls" aria-label="Pull Requests" class="js-selected-navigation-item sunken-menu-item" data-hotkey="g p" data-selected-links="repo_pulls /bitmakerlabs/crm-web/pulls">
+          <span class="octicon octicon-git-pull-request"></span> <span class="full-word">Pull Requests</span>
+          <span class="js-pull-replace-counter"></span>
+          <img alt="" class="mini-loader" height="16" src="./Part 2  Layouts HTML and CSS · bitmakerlabs crm-web Wiki_files/octocat-spinner-32.gif" width="16">
+</a>    </li>
+
+
+      <li class="tooltipped tooltipped-w" aria-label="Wiki">
+        <a href="https://github.com/bitmakerlabs/crm-web/wiki" aria-label="Wiki" class="selected js-selected-navigation-item sunken-menu-item" data-hotkey="g w" data-selected-links="repo_wiki /bitmakerlabs/crm-web/wiki">
+          <span class="octicon octicon-book"></span> <span class="full-word">Wiki</span>
+          <img alt="" class="mini-loader" height="16" src="./Part 2  Layouts HTML and CSS · bitmakerlabs crm-web Wiki_files/octocat-spinner-32.gif" width="16">
+</a>      </li>
+  </ul>
+  <div class="sunken-menu-separator"></div>
+  <ul class="sunken-menu-group">
+
+    <li class="tooltipped tooltipped-w" aria-label="Pulse">
+      <a href="https://github.com/bitmakerlabs/crm-web/pulse" aria-label="Pulse" class="js-selected-navigation-item sunken-menu-item" data-selected-links="pulse /bitmakerlabs/crm-web/pulse">
+        <span class="octicon octicon-pulse"></span> <span class="full-word">Pulse</span>
+        <img alt="" class="mini-loader" height="16" src="./Part 2  Layouts HTML and CSS · bitmakerlabs crm-web Wiki_files/octocat-spinner-32.gif" width="16">
+</a>    </li>
+
+    <li class="tooltipped tooltipped-w" aria-label="Graphs">
+      <a href="https://github.com/bitmakerlabs/crm-web/graphs" aria-label="Graphs" class="js-selected-navigation-item sunken-menu-item" data-selected-links="repo_graphs repo_contributors /bitmakerlabs/crm-web/graphs">
+        <span class="octicon octicon-graph"></span> <span class="full-word">Graphs</span>
+        <img alt="" class="mini-loader" height="16" src="./Part 2  Layouts HTML and CSS · bitmakerlabs crm-web Wiki_files/octocat-spinner-32.gif" width="16">
+</a>    </li>
+  </ul>
+
+
+</nav>
+
+              <div class="only-with-full-nav">
+                
+  
+<div class="clone-url " data-protocol-type="http" data-url="/users/set_protocol?protocol_selector=http&amp;protocol_type=clone">
+  <h3><span class="text-emphasized">HTTPS</span> clone URL</h3>
+  <div class="input-group js-zeroclipboard-container">
+    <input type="text" class="input-mini input-monospace js-url-field js-zeroclipboard-target" value="https://github.com/bitmakerlabs/crm-web.git" readonly="readonly">
+    <span class="input-group-button">
+      <button aria-label="Copy to clipboard" class="js-zeroclipboard minibutton zeroclipboard-button" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+    </span>
+  </div>
+</div>
+
+  
+<div class="clone-url open" data-protocol-type="ssh" data-url="/users/set_protocol?protocol_selector=ssh&amp;protocol_type=clone">
+  <h3><span class="text-emphasized">SSH</span> clone URL</h3>
+  <div class="input-group js-zeroclipboard-container">
+    <input type="text" class="input-mini input-monospace js-url-field js-zeroclipboard-target" value="git@github.com:bitmakerlabs/crm-web.git" readonly="readonly">
+    <span class="input-group-button">
+      <button aria-label="Copy to clipboard" class="js-zeroclipboard minibutton zeroclipboard-button" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+    </span>
+  </div>
+</div>
+
+  
+<div class="clone-url " data-protocol-type="subversion" data-url="/users/set_protocol?protocol_selector=subversion&amp;protocol_type=clone">
+  <h3><span class="text-emphasized">Subversion</span> checkout URL</h3>
+  <div class="input-group js-zeroclipboard-container">
+    <input type="text" class="input-mini input-monospace js-url-field js-zeroclipboard-target" value="https://github.com/bitmakerlabs/crm-web" readonly="readonly">
+    <span class="input-group-button">
+      <button aria-label="Copy to clipboard" class="js-zeroclipboard minibutton zeroclipboard-button" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+    </span>
+  </div>
+</div>
+
+
+
+<p class="clone-options">You can clone with
+  <a href="https://github.com/bitmakerlabs/crm-web/wiki/Part-2%3A-Layouts-HTML-and-CSS#" class="js-clone-selector" data-protocol="http">HTTPS</a>, <a href="https://github.com/bitmakerlabs/crm-web/wiki/Part-2%3A-Layouts-HTML-and-CSS#" class="js-clone-selector" data-protocol="ssh">SSH</a>, or <a href="https://github.com/bitmakerlabs/crm-web/wiki/Part-2%3A-Layouts-HTML-and-CSS#" class="js-clone-selector" data-protocol="subversion">Subversion</a>.
+  <a href="https://help.github.com/articles/which-remote-url-should-i-use" class="help tooltipped tooltipped-n" aria-label="Get help on which URL is right for you.">
+    <span class="octicon octicon-question"></span>
+  </a>
+</p>
+
+  <a href="http://mac.github.com/" data-url="github-mac://openRepo/https://github.com/bitmakerlabs/crm-web" class="minibutton sidebar-button js-conduit-rewrite-url" title="Save bitmakerlabs/crm-web to your computer and use it in GitHub Desktop." aria-label="Save bitmakerlabs/crm-web to your computer and use it in GitHub Desktop.">
+    <span class="octicon octicon-device-desktop"></span>
+    Clone in Desktop
+  </a>
+
+
+                <a href="https://github.com/bitmakerlabs/crm-web/archive/master.zip" class="minibutton sidebar-button" aria-label="Download the contents of bitmakerlabs/crm-web as a zip file" title="Download the contents of bitmakerlabs/crm-web as a zip file" rel="nofollow">
+                  <span class="octicon octicon-cloud-download"></span>
+                  Download ZIP
+                </a>
+              </div>
+        </div><!-- /.repository-sidebar -->
+
+        <div id="js-repo-pjax-container" class="repository-content context-loader-container" data-pjax-container="">
+          
+
+<div id="wiki-wrapper" class="wiki-wrapper page">
+<div class="gh-header">
+  <div class="gh-header-show">
+      <div class="gh-header-actions">
+          <a href="https://github.com/bitmakerlabs/crm-web/wiki/Part-2%3A-Layouts-HTML-and-CSS/_edit" class="minibutton ">Edit</a>
+          <a href="https://github.com/bitmakerlabs/crm-web/wiki/_new" class="minibutton primary">New Page</a>
+      </div>
+    <h1 class="gh-header-title instapaper_title">Part 2: Layouts HTML and CSS</h1>
+      <div class="gh-header-meta">
+        Julie Hache edited this page <time datetime="2014-04-02T18:29:11Z" is="relative-time" title="Apr 2, 2014, 2:29 PM EDT">on Apr 2, 2014</time>
+        ·
+        <a href="https://github.com/bitmakerlabs/crm-web/wiki/Part-2:-Layouts-HTML-and-CSS/_history" class="history">
+          9 revisions
+        </a>
+      </div>
+  </div>
+</div>
+<div id="wiki-content">
+  <div class="wrap has-rightbar">
+
+  <div id="wiki-rightbar">
+    <div class="wiki-pages-box readability-sidebar boxed-group flush js-wiki-pages-box " role="navigation">
+      
+<h3 class="js-wiki-toggle-collapse wiki-auxiliary-content">
+  <span class="octicon octicon-triangle-down caret-expanded"></span>
+  <span class="octicon octicon-triangle-right caret-collapsed"></span>
+  Pages <span class="counter">5</span>
+</h3>
+<div class="boxed-group-inner wiki-auxiliary-content wiki-auxiliary-content-no-bg">
+
+  <ul class="wiki-pages" data-filterable-for="wiki-pages-filter" data-filterable-type="substring">
+    <li>
+      <strong><a href="https://github.com/bitmakerlabs/crm-web/wiki" class="wiki-page-link">Home</a></strong>
+    </li>
+    <li>
+      <strong><a href="https://github.com/bitmakerlabs/crm-web/wiki/Part-1:-Getting-Started" class="wiki-page-link">Part 1: Getting Started</a></strong>
+    </li>
+    <li>
+      <strong><a href="https://github.com/bitmakerlabs/crm-web/wiki/Part-2:-Layouts-HTML-and-CSS" class="wiki-page-link">Part 2: Layouts HTML and CSS</a></strong>
+    </li>
+    <li>
+      <strong><a href="https://github.com/bitmakerlabs/crm-web/wiki/Part-3:-Working-with-Forms" class="wiki-page-link">Part 3: Working with Forms</a></strong>
+    </li>
+    <li>
+      <strong><a href="https://github.com/bitmakerlabs/crm-web/wiki/Part-4:-Saving-your-data" class="wiki-page-link">Part 4: Saving your data</a></strong>
+    </li>
+  </ul>
+</div>
+
+    </div>
+
+
+    <div class="clone-url">
+      <h5>Clone this wiki locally</h5>
+      <div class="input-group js-zeroclipboard-container">
+        <input type="text" class="input-mini input-monospace js-url-field js-zeroclipboard-target" value="https://github.com/bitmakerlabs/crm-web.wiki.git" readonly="readonly">
+        <span class="input-group-button">
+          <button aria-label="Copy to clipboard" class="js-zeroclipboard minibutton zeroclipboard-button" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+        </span>
+      </div>
+
+        <a href="http://mac.github.com/" data-url="github-mac://openRepo/https://github.com/bitmakerlabs/crm-web.wiki" class="minibutton sidebar-button js-conduit-rewrite-url" title="Save this wiki to your computer and use it in GitHub Desktop." aria-label="Save this wiki to your computer and use it in GitHub Desktop.">
+          <span class="octicon octicon-device-desktop"></span>
+          Clone in Desktop
+        </a>
+
+    </div>
+  </div>
+
+  <div id="wiki-body" class="gollum-markdown-content instapaper_body">
+    <div class="markdown-body">
+      <p>This part of the tutorial assumes that you've completed <a href="https://github.com/bitmakerlabs/crm-web/wiki/Part-1:-Getting-Started">Part 1</a>.</p>
+
+<p>This assignment will focus more specifically on how to best organize the HTML, CSS and views that we're using in our Sinatra application. Next off, you can choose to style it whichever way you like.</p>
+
+<h2>
+<a id="user-content-1-using-layouts" class="anchor" href="https://github.com/bitmakerlabs/crm-web/wiki/Part-2%3A-Layouts-HTML-and-CSS#1-using-layouts" aria-hidden="true"><span class="octicon octicon-link"></span></a>1. Using Layouts</h2>
+
+<p>Our application should currently hold at least 3 different views. Have you noticed anything about these views and the responses we've created so far?</p>
+
+<p>They're not complete HTML documents, they're not even inside an  tag!</p>
+
+<p>If you decided to add them, that's great! But you probably ended up duplicating a lot of code, since each one of these views likely has very similar HTML overall.</p>
+
+<p>As we already know, programmers like things DRY (Don't Repeat Yourself) and layouts luckily come to the rescue!</p>
+
+<p>Layouts are a common part of any templating language, and this is the case with Sinatra. We'll become acquainted with these again when using Rails.</p>
+
+<p>Here's what an example layout looks like:</p>
+
+<div class="highlight highlight-html+erb"><pre>&lt;!DOCTYPE html&gt;
+&lt;<span class="pl-ent">html</span>&gt;
+  &lt;<span class="pl-ent">head</span>&gt;
+
+  &lt;/<span class="pl-ent">head</span>&gt;
+  &lt;<span class="pl-ent">body</span>&gt;
+    <span class="pl-pse">&lt;%=</span><span class="pl-s2"> <span class="pl-k">yield</span> </span><span class="pl-pse"><span class="pl-s2">%</span>&gt;</span>
+  &lt;/<span class="pl-ent">body</span>&gt;
+&lt;/<span class="pl-ent">html</span>&gt;</pre></div>
+
+<p>Layouts use <strong><code>yield</code></strong>, which you may have never seen before. <strong>yield</strong> allows us to dynamically insert a block of code inside this file, which means we can automatically wrap each one of our views with this full HTML document.</p>
+
+<h3>
+<a id="user-content-create-a-full-html-document" class="anchor" href="https://github.com/bitmakerlabs/crm-web/wiki/Part-2%3A-Layouts-HTML-and-CSS#create-a-full-html-document" aria-hidden="true"><span class="octicon octicon-link"></span></a>Create a full HTML document</h3>
+
+<p>Creating a layout in Sinatra is pretty straightforward: there's a convention for everything! If you create your layout as <code>views/layout.erb</code>, it will automatically get applied.</p>
+
+<p>Build a layout that works for your web application in a new file called <code>views/layout.erb</code>. It should contain a full html document, including:</p>
+
+<ul class="task-list">
+<li>a <code>DOCTYPE</code> declaration</li>
+<li>a <code>&lt;head&gt;</code> with a <code>&lt;title&gt;</code>
+</li>
+<li>a <code>&lt;body&gt;</code> that <em>yields</em> to the views.</li>
+</ul>
+
+<p>When you're done, commit your changes. Try viewing the source from all your different pages so far, you'll see that they're all using the layout.</p>
+
+<h2>
+<a id="user-content-2-add-a-header-footer-and-navigation" class="anchor" href="https://github.com/bitmakerlabs/crm-web/wiki/Part-2%3A-Layouts-HTML-and-CSS#2-add-a-header-footer-and-navigation" aria-hidden="true"><span class="octicon octicon-link"></span></a>2. Add a header, footer, and navigation</h2>
+
+<p>Typically layouts are pushed even further than just the bare minimum valid HTML, as they allow you to apply an overall look and feel to your entire application. For each page, give your application a consistent look by <strong>creating a page header, footer and a navigation in your layout</strong>.</p>
+
+<p>Some of the following HTML 5 "section" elements might be good to consider adding to your layout:
+<a href="https://developer.mozilla.org/en/docs/Web/Guide/HTML/HTML5/HTML5_element_list#Sections">https://developer.mozilla.org/en/docs/Web/Guide/HTML/HTML5/HTML5_element_list#Sections</a></p>
+
+<p>Once you're done, commit your changes and move onto styling and positioning.</p>
+
+<h2>
+<a id="user-content-3-make-it-all-look-great" class="anchor" href="https://github.com/bitmakerlabs/crm-web/wiki/Part-2%3A-Layouts-HTML-and-CSS#3-make-it-all-look-great" aria-hidden="true"><span class="octicon octicon-link"></span></a>3. Make It All Look Great!</h2>
+
+<p>Now that you've properly organized things, you'll need to style your application, whichever way you like, but here are a few guidelines:</p>
+
+<ul class="task-list">
+<li>Prefer external stylesheets over inline styles: you can store any stylesheets or images or other static files inside a "public" directory in your project. When you're linking them, don't forget to put a "/" in front of the file name so no matter where you can in project you can still find it.</li>
+</ul>
+
+<p>Example, linking a stylesheet inside your layout's <code>&lt;head&gt;</code> tag.</p>
+
+<div class="highlight highlight-html+erb"><pre>&lt;<span class="pl-ent">html</span>&gt;
+  &lt;<span class="pl-ent">head</span>&gt;
+    &lt;<span class="pl-ent">link</span> <span class="pl-e">rel</span>=<span class="pl-s1"><span class="pl-pds">"</span>stylesheet<span class="pl-pds">"</span></span> <span class="pl-e">type</span>=<span class="pl-s1"><span class="pl-pds">"</span>text/css<span class="pl-pds">"</span></span> <span class="pl-e">href</span>=<span class="pl-s1"><span class="pl-pds">"</span>/style.css<span class="pl-pds">"</span></span>&gt;
+
+...</pre></div>
+
+<ul class="task-list">
+<li>Try focusing on a two- or three- column layout: you can add multiple divs inside your <code>&lt;body</code> tag and move the <code>yield</code> block to where the main content should belong.</li>
+</ul>
+
+<p>Most of these styles can all be set up inside your new layout file, since it can be applied to all pages.</p>
+
+<p>Happy Styling!</p>
+
+<p><img src="./Part 2  Layouts HTML and CSS · bitmakerlabs crm-web Wiki_files/687474703a2f2f322e62702e626c6f6773706f742e636f6d2f2d343176366e3356616635732f5565524e5f584a306b65492f41414141414141414e32592f59784948686464476961772f73313630302f6373732e676966" alt="" data-canonical-src="http://2.bp.blogspot.com/-41v6n3Vaf5s/UeRN_XJ0keI/AAAAAAAAN2Y/YxIHhddGiaw/s1600/css.gif"></p>
+
+    </div>
+
+  </div>
+  </div>
+</div>
+</div>
+
+
+        </div>
+
+      </div><!-- /.repo-container -->
+      <div class="modal-backdrop"></div>
+    </div><!-- /.container -->
+  </div><!-- /.site -->
+
+
+    </div><!-- /.wrapper -->
+
+      <div class="container">
+  <div class="site-footer" role="contentinfo">
+    <ul class="site-footer-links right">
+      <li><a href="https://status.github.com/">Status</a></li>
+      <li><a href="https://developer.github.com/">API</a></li>
+      <li><a href="http://training.github.com/">Training</a></li>
+      <li><a href="http://shop.github.com/">Shop</a></li>
+      <li><a href="https://github.com/blog">Blog</a></li>
+      <li><a href="https://github.com/about">About</a></li>
+
+    </ul>
+
+    <a href="https://github.com/" aria-label="Homepage">
+      <span class="mega-octicon octicon-mark-github" title="GitHub"></span>
+    </a>
+
+    <ul class="site-footer-links">
+      <li>© 2015 <span title="0.08947s from github-fe118-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
+        <li><a href="https://github.com/site/terms">Terms</a></li>
+        <li><a href="https://github.com/site/privacy">Privacy</a></li>
+        <li><a href="https://github.com/security">Security</a></li>
+        <li><a href="https://github.com/contact">Contact</a></li>
+    </ul>
+  </div><!-- /.site-footer -->
+</div><!-- /.container -->
+
+
+    <div class="fullscreen-overlay js-fullscreen-overlay" id="fullscreen_overlay">
+  <div class="fullscreen-container js-suggester-container">
+    <div class="textarea-wrap">
+      <textarea name="fullscreen-contents" id="fullscreen-contents" class="fullscreen-contents js-fullscreen-contents" placeholder=""></textarea>
+      <div class="suggester-container">
+        <div class="suggester fullscreen-suggester js-suggester js-navigation-container"></div>
+      </div>
+    </div>
+  </div>
+  <div class="fullscreen-sidebar">
+    <a href="https://github.com/bitmakerlabs/crm-web/wiki/Part-2%3A-Layouts-HTML-and-CSS#" class="exit-fullscreen js-exit-fullscreen tooltipped tooltipped-w" aria-label="Exit Zen Mode">
+      <span class="mega-octicon octicon-screen-normal"></span>
+    </a>
+    <a href="https://github.com/bitmakerlabs/crm-web/wiki/Part-2%3A-Layouts-HTML-and-CSS#" class="theme-switcher js-theme-switcher tooltipped tooltipped-w" aria-label="Switch themes">
+      <span class="octicon octicon-color-mode"></span>
+    </a>
+  </div>
+</div>
+
+
+
+    <div id="ajax-error-message" class="flash flash-error">
+      <span class="octicon octicon-alert"></span>
+      <a href="https://github.com/bitmakerlabs/crm-web/wiki/Part-2%3A-Layouts-HTML-and-CSS#" class="octicon octicon-x flash-close js-ajax-error-dismiss" aria-label="Dismiss error"></a>
+      Something went wrong with that request. Please try again.
+    </div>
+
+
+      <script crossorigin="anonymous" src="./Part 2  Layouts HTML and CSS · bitmakerlabs crm-web Wiki_files/frameworks-af95b05cb14b7a29b0457c26b4a1d24151f4a47842c8e74bd556622f347b9d3d.js" type="text/javascript"></script>
+      <script async="async" crossorigin="anonymous" src="./Part 2  Layouts HTML and CSS · bitmakerlabs crm-web Wiki_files/github-6fb290feb68c5887ec2c3a665de6ad3c245fca991bd8114ccedcfae4cd7314f1.js" type="text/javascript"></script>
+      
+        <script crossorigin="anonymous" src="./Part 2  Layouts HTML and CSS · bitmakerlabs crm-web Wiki_files/wiki-9bdadeb969c13b362c729813988236483d4c5abc83f6a436f3af2204e6ffe14f.js" type="text/javascript"></script>
+
+  
+
+
+<div id="global-zeroclipboard-html-bridge" class="global-zeroclipboard-container" style="position: absolute; left: 0px; top: -9999px; width: 1px; height: 1px; z-index: 999999999;"><object id="global-zeroclipboard-flash-bridge" name="global-zeroclipboard-flash-bridge" width="100%" height="100%" type="application/x-shockwave-flash" data="https://assets-cdn.github.com/flash/ZeroClipboard.v2.1.6.swf"><param name="allowScriptAccess" value="always"><param name="allowNetworking" value="all"><param name="menu" value="false"><param name="wmode" value="transparent"><param name="flashvars" value="trustedOrigins=github.com%2C%2F%2Fgithub.com%2Chttps%3A%2F%2Fgithub.com&amp;swfObjectId=global-zeroclipboard-flash-bridge"></object></div>    <div class="facebox" id="facebox" style="display:none;">       <div class="facebox-popup">         <div class="facebox-content">         </div>         <button type="button" class="facebox-close js-facebox-close" aria-label="Close modal">           <span class="octicon octicon-remove-close"></span>         </button>       </div>     </div></body></html>
