@@ -31,21 +31,35 @@ end
 get '/contacts/:id' do
 	id = params[:id].to_i
 	@contact = @@rolodex.find(params)[:id].to_i
+
 	if @contact
-	erb :show_contact
+		erb :show_contact
 	else
-	raise Sinatra::Not Found
+		raise Sinatra::Not Found
+	end
+end
 
 get '/contacts/:id/edit' do
 	@contact = @@rolodex.find(params[:id].to_i)
 	if @contact
 		erb :edit_contact
-	rais Sinatra::Not Found
-
+	else
+		raise Sinatra::Not Found
+	end
 end
 
-end
-		
+put "/contacts/:id" do
+  @contact = @@rolodex.find(params[:id].to_i)
+  if @contact
+    @contact.first_name = params[:first_name]
+    @contact.last_name = params[:last_name]
+    @contact.email = params[:email]
+    @contact.note = params[:note]
+
+    redirect to("/contacts")
+  else
+    raise Sinatra::NotFound
+  end
 end
 
 
