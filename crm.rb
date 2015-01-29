@@ -30,7 +30,7 @@ end
 
 get '/contacts/:id' do
 	id = params[:id].to_i
-	@contact = $rolodex.find(id)
+	@contact = $rolodex.find[:id].to_i
 	erb :show
 end
 
