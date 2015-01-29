@@ -1,6 +1,7 @@
 require_relative 'rolodex'
 require_relative 'contact'
 require 'sinatra'
+require 'sinatra/reloader'
 
 $rolodex = Rolodex.new
 
@@ -16,8 +17,7 @@ get '/' do
 	erb :index
 end
 
-
-get "/contacts" do
+get '/show-all' do
   @contacts = $rolodex.contacts
 
   erb :contacts
@@ -26,6 +26,12 @@ end
 get '/contacts/new' do 
 	@crm_app_name = "My CRM"
 	erb :new
+end
+
+get '/contacts/:id' do
+	id = params[:id].to_i
+	@contact = $rolodex.find(id)
+	erb :show
 end
 
 

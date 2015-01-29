@@ -1,1 +1,39 @@
-layout.erb
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Dominic's CRM</title>
+	<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+	<div id="wrap">
+
+		<header class="cf">
+			<a href="/"><h2>Dominic's CRM</h2> </a>
+
+			<nav>
+				<ul>
+					<li><a href="/show-all">show all contacts</a></li>
+					<li><a href="/contacts/new">add contacts</a></li/>
+					<li><a href="/delete-contact">delete contacts</a></li>
+
+					</ul>
+
+				</nav>
+		</header>
+
+		<div id="main">
+			<%= yield %>
+		</div>
+			
+	</div>
+		<footer id="footer">
+			Copy Right ☠
+		</footer>
+
+	
+			
+		</footer>
+	
+</body>
+</html>

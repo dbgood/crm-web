@@ -1,0 +1,85 @@
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+.cf {
+	margin-left: 5%;
+}
+
+* {
+	margin:0;
+	padding:0;
+} 
+
+header {
+	width: 100%:;
+}
+
+html, body {height: 100%;}
+
+#wrap {
+	min-height: 100%;
+	margin: 5%;
+}
+
+#main {
+	overflow:auto;
+	padding-bottom: 180px;
+	margin: 5%;
+	}  /* must be same height as the footer */
+
+#footer {position: relative;
+	margin-top: -40px; /* negative value of footer height */
+	height: 40px;
+	clear:both;
+	text-align: center
+} 
+
+
+
+
+
+
+nav ul{
+	list-style:none;
+}
+nav li{
+	display:inline-block;
+	float:right;
+	margin-right:10px;
+}
+nav li a{
+	border:1px solid wheat;
+	padding:10px;
+	text-decoration: none;
+}
+
+h1 {
+	color: wheat;
+	margin-bottom: 20px
+}
+
+h2 {
+	color:  wheat;
+}
+
+body {
+	background-color: black;
+	color: wheat;
+}
+
+nav li a {
+	color: wheat;
+}
+
+a {
+	color: wheat;
+}
+
+
+
