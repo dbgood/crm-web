@@ -30,8 +30,12 @@ end
 
 get '/contacts/:id' do
 	id = params[:id].to_i
-	@contact = $rolodex.find[:id].to_i
-	erb :show
+	@contact = @@rolodex.find(params)[:id].to_i
+	if @contact
+	erb :show_contact
+	els
+	raise Sinatra::Not Found
+		
 end
 
 
