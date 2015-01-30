@@ -2,11 +2,11 @@
 <a href="/contacts/new">Add new contact</a>
   
 <ul>
-<% $rolodex.contacts.each do |contact| %>
+<% @@rolodex.contacts.each do |contact| %>
   <li><%= contact.first_name %> <%= contact.last_name %></li>
   <li><%= contact.email %> <%= contact.note %></li>
 
-  <a href="/contacts/<%= contact.id %>">Details</a>
+  <a href="/contacts/<%= contact.id %>"Details</a>
 
   
 <% end %>

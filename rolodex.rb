@@ -13,6 +13,11 @@ class Rolodex
 		@@ids +=1
 	end
 
+	def remove_contact(contact)
+		@contacts.delete(contact)
+	end
+
+
 	def find(id)
 		@contacts.find { |contact| contact.id == id }
 	end
